@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+#main{
+    display: grid;
+    grid-template-areas: 'nav nav nav''header header header' 'feature feature feature' 'contact contact contact' 'about about about'
+    'footer footer footer';
+    grid-template-rows: 5px 390px 220px 240px 210px 50px;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw 33.3vw;   
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(45, 204, 112);
+
+}
+header{
+    grid-area: header;
+}
+   
+#feature{
+    grid-area: feature;
+    background-color:white;
+    display: flex;
+}
+#contact{
+    grid-area: contact;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+}
+#about{
+    grid-area: about;
+    background-color: white;
+    display: flex;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+}
